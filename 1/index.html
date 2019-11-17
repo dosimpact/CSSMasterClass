@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task1</title>
+    <style>
+      .father {
+        display: flex;
+        flex-direction: column; /* row-reverse */
+        flex-wrap: wrap; /* | nowrap | */
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh; /*100 viewport height*/
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+        border: 1px solid aquamarine;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        font-size: 24px;
+      }
+      .box:nth-child(1) {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>
