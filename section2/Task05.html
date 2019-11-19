@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task05</title>
+    <style>
+      .father {
+        display: grid;
+        gap: 5px;
+        grid-auto-rows: 120px;
+        /*fraction 차지하는 비율을  2대 1대 2대 1대 비율로 나눈다.*/
+        /* grid-template-columns: 2fr 1fr 2fr 1fr; */
+        /* repeat이라는 함수로 간단히 표현 가능!*/
+        grid-template-columns: repeat(3, 1fr) 4fr;
+      }
+      .first {
+        background-color: burlywood;
+      }
+      .second {
+        background-color: rgb(167, 222, 135);
+      }
+      .third {
+        background-color: rgb(135, 151, 222);
+      }
+      .fourth {
+        background-color: rgb(222, 135, 210);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="fourth"></div>
+    </div>
+  </body>
+</html>

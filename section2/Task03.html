@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task02</title>
+    <style>
+      .father {
+        display: grid;
+        grid-template-columns: 300px 150px;
+        grid-template-rows: 300px 120px;
+        gap: 5px;
+        /*그리드에서 넘치는것은 기본적으로 감추어진다.*/
+        /*넘치는것을 새로운 열을 만들어 배치*/
+        grid-auto-columns: 60px;
+        grid-auto-flow: column;
+        /*넘치는것을 새로운 행을 만들어 배치*/
+        /* grid-auto-rows: 30px;
+        grid-auto-flow: row; */
+      }
+      .box {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
