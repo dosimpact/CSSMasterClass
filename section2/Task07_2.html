@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task06</title>
+    <style>
+      .father {
+        display: grid;
+        gap: 5px;
+        grid-auto-rows: 120px;
+        /* 😀 반응형 웹처럼 적용하는 가장 최고의 방법.*/
+        /* 😀 최소 350px 로 그리드를 하되, 남는부분은 1fr로 늘려버려. 만약 너비가 현재 1800이면 500px 3개 보장 min + 600px씩 나눠가져 (max = 1fr).*/
+        grid-template-columns: repeat(auto-fit, minmax(70px,1fr));
+      }
+      .box:nth-child(even) {
+        background-color: burlywood;
+      }
+      .box:nth-child(odd) {
+        background-color: rgb(167, 222, 135);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

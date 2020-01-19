@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task11</title>
+    <style>
+      .father {
+        display: grid;
+        gap: 5px;
+        grid-auto-rows: 120px;
+        /* grid-auto-flow는 미쳐 채우지 못한 그리드요소드들을 앞에서부터 채워준다.*/
+        /* grid-auto-flow: dense; */
+        /* 라인 네이밍을 다음과 같이 할수 있다.-> []은 gap이라 보면됨. 6개의 gap과 5개의 요소*/
+        grid-template-columns: [first-line] 1fr [awesome-line] 1fr [sexy-line] 1fr [nico-line] 1fr [lynn-line] 1fr [line-line];
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box:nth-child(even) {
+        background-color: burlywood;
+      }
+      .box:nth-child(odd) {
+        background-color: rgb(167, 222, 135);
+      }
+      .box:first-child {
+        /*이 grid요소는 시작하는 열과 끝나는 열을 다음처럼 지정해준다.*/
+        grid-column-start: sexy-line;
+        grid-column-end: lynn-line;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+      <div class="box">13</div>
+      <div class="box">14</div>
+      <div class="box">15</div>
+      <div class="box">16</div>
+      <div class="box">17</div>
+      <div class="box">18</div>
+      <div class="box">19</div>
+      <div class="box">20</div>
+      <div class="box">21</div>
+      <div class="box">22</div>
+    </div>
+  </body>
+</html>
