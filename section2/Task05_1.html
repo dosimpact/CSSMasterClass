@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task05</title>
+    <style>
+    /* fr의 의미는 fraction 이라는 의미다. 반응형을 디자인 할떄 어려운 단위 계산이 필요없다. : fr의 의미는 최대한 많은 공간을 차지해라.*/
+      .father {
+        display: grid;
+        gap: 5px;
+        grid-auto-rows: 120px;
+        /*처음단위는 어떻게 되든 모르겠지만, 2:1:2:1로 나누고 싶어.*/
+        grid-template-columns: 2fr 1fr 2fr 1fr; 
+
+      }
+      .first {
+        background-color: burlywood;
+      }
+      .second {
+        background-color: rgb(167, 222, 135);
+      }
+      .third {
+        background-color: rgb(135, 151, 222);
+      }
+      .fourth {
+        background-color: rgb(222, 135, 210);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="fourth"></div>
+    </div>
+  </body>
+</html>

@@ -7,9 +7,12 @@
     <title>Section 2</title>
     <style>
       .father {
+        /*그리드 시스템, 하위 요소들을 그리드 정렬을 한다.
+      1.grid-template-rows 로 행의 크기를 정해준다. <- 특별적용.
+      2.grid-auto-rows 로 그외 행의 크기를  모두 자동으로 정해준다. <- 보편적용*/
         display: grid;
-        grid-template-columns: 30px 10px;
-        grid-template-rows: 30px 10px;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 200px 100px;
         gap: 10px;
       }
       .box {

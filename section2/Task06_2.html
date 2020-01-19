@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task05</title>
+    <style>
+      .father {
+        display: grid;
+        gap: 5px;
+        grid-auto-rows: 120px;
+        /* max-content: 너가 쓸수 있는최대의 공간을 써도 된다. content기반으로, content가 많으면 많이쓰는겨*/
+        grid-template-columns: max-content repeat(4, 1fr);
+      }
+      .first {
+        background-color: burlywood;
+      }
+      .second {
+        background-color: rgb(167, 222, 135);
+      }
+      .third {
+        background-color: rgb(135, 151, 222);
+      }
+      .fourth {
+        background-color: rgb(222, 135, 210);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="first">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        exercitationem nisi quisquam, architecto praesentium dolor id beatae
+        cumque nulla esse vero natus cum dolore consequuntur voluptatem,
+        consectetur perferendis odio similique.
+      </div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="fourth"></div>
+    </div>
+  </body>
+</html>

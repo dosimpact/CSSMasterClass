@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task05</title>
+    <style>
+      .father {
+        display: grid;
+        gap: 5px;
+        /* min-content: max-content와 반대로 content내용은 보장해주는데, 최소로 써라.*/
+        /* fr단위 = 비율 자동 보장 + min-content 와 max-content를 통해서 유연하게 템플릿을 조정할 수 있다.*/
+        grid-template-columns: min-content repeat(3, 1fr);
+      }
+      .first {
+        background-color: burlywood;
+      }
+      .second {
+        background-color: rgb(167, 222, 135);
+      }
+      .third {
+        background-color: rgb(135, 151, 222);
+      }
+      .fourth {
+        background-color: rgb(222, 135, 210);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="first">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        exercitationem nisi quisquam, architecto praesentium dolor id beatae
+        cumque nulla esse vero natus cum dolore consequuntur voluptatem,
+        consectetur perferendis odio similique.
+      </div>
+      <div class="second">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        exercitationem nisi quisquam, architecto praesentium dolor id beatae
+        cumque nulla esse vero natus cum dolore consequuntur voluptatem,
+        consectetur perferendis odio similique.
+      </div>
+      <div class="third">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        exercitationem nisi quisquam, architecto praesentium dolor id beatae
+        cumque nulla esse vero natus cum dolore consequuntur voluptatem,
+        consectetur perferendis odio similique.
+      </div>
+      <div class="fourth">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+        exercitationem nisi quisquam, architecto praesentium dolor id beatae
+        cumque nulla esse vero natus cum dolore consequuntur voluptatem,
+        consectetur perferendis odio similique.
+      </div>
+    </div>
+  </body>
+</html>
