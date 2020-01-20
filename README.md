@@ -24,9 +24,34 @@
 
 - Parcel 멋진 코드를 못생긴 코드로 변환시켜 모든 브라우저가 이해하도록 만들어주는 트렌셀러다.
 
+### 환경 설정
+
 - npm init -y
+- npm install parcel-bundler
+- npm install postcss-preset-env
+
+- PostCSS는 JS로 CSS를 컴파일 해주는 환경이고 | poestcss-preset-env 가 이제 변화도구중 하나이다.
+  [https://postcss.org/](https://postcss.org/)
+  [https://preset-env.cssdb.org/](https://preset-env.cssdb.org/)
 
 # 3.1 PostCSS and Parcel (7:13)
+
+- PostCSS 우리의 CSS를 모던하게 바꾸어준다.
+- :full-screen 과 같은 가상 선택자를 쓰면, 호환성 문제가 있는데, 자동으로 새로운 코드로 만들어주어 이를 해결!
+- css Linter : css에 생길 문제들을 미리 확인해 주는 모듈이다.
+- postcss-preset-env : 설치하자 . => css next 였던 프로잭트.
+
+- package.json 셋팅 | stage는 0 1,2,3 이 있는데, 3으로 갈수록 완벽하게 작동하는거, 0으로 갈수록 작동 예정 임!
+
+```js
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
+  }
+```
 
 # 3.2 Functional pseudo-classes (3:05)
 

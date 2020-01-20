@@ -1,3 +1,81 @@
-body {
-  background-color: blanchedalmond;
+/* matches 선택자를 여러개 지정 할 수 있다. */
+/*
+li:matches(.target, :nth-child(even)) {
+  background-color: chocolate;
+}
+*/
+/* not 빼고 선택하기.. */
+
+/*
+li:not(.target) {
+  background-color: cornflowerblue;
+}
+*/
+
+/* css 변수 만들기 , html보다 더 높은 상위 요소는 root이다. root에 변수를 선언 그리고 사용 -> 색상 변수만 다른 파일로 빼서 지정해주면 되는거임.!*/
+
+/*
+:root {
+  --awesomeColor: #e74c3c;
+  --awesomeBorder: 1px solid #e74c3c;
+}
+li:first-child a {
+  color: var(--awesomeColor);
+}
+li:first-child a {
+  border: var(--awesomeBorder);
+}
+*/
+
+/* 선택자 변수 만들기 , :--이름  으로 변수를 만들고, 적용 시킬 요소를 적는다. 그리고 그 변수를 사용하기.*/
+/*
+@custom-selector :--headers h1, h2, h3, h4;
+
+:--headers {
+  color: #8e44ad;
+}
+*/
+
+/* 미디어 변수 만들기 물론 min-width 도 작동을 하는데, 여기서는 <=를 사용해서 나타낼 수 있다.  */
+/*
+@custom-media --ipad-size (450px <= width <= 850px);
+
+@media (--ipad-size) {
+  body {
+    background: cornflowerblue;
+  }
+}
+*/
+/* color-mod 지금은 더이상 지원하지 않지만 , 플러그인을 설치해서 사용 가능하다.*/
+/*
+h1 {
+  color: #f1c40f;
+}
+h1:hover {
+  color: color-mod(#f1c40f blackness(70%));
+}
+*/
+/* system-ui 라고 적으면 각 os 에 맞는 기본 폰트들이 임포트 된다. ! 물론 복붙으로 해도 됨!*/
+/*
+h1 {
+  font-family: system-ui;
+}
+*/
+/* nesting rules -> 수많은 여러 선택자를 하나로 해결할수있어.*/
+
+main {
+  background-color: darkblue;
+  color: aliceblue;
+
+  & div {
+    background-color: #f1c40f;
+    color: darkblue;
+    &:hover {
+      color: aquamarine;
+    }
+  }
+  & div:first-child {
+    background-color: chartreuse;
+    color: darkblue;
+  }
 }
