@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+}
+.box {
+  flex-grow: 1;
+  width: 50px;
+  height: 50px;
+  background-color: rebeccapurple;
+  margin: 10px;
+}
+.box:first-child {
+  flex-grow: 10;
+}

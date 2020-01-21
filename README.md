@@ -1,5 +1,47 @@
 # CSS Master Class
 
+---
+
+# 요약 정리
+
+# 그리드 선언을 합니다.
+
+display: grid
+gap:
+
+# 그리드 템플릿을 만듭니다.
+
+grid-template-rows: 총 2개의 행을 가지는데, 각 행의 높이를 정한다.
+gird-tempalte-columns: 마찬가지..
+
+grid-auto-rows: 다 알아서, 이렇게 적용해,
+grid-auto-flow: gird에서 넘치는거는 기본 row으로 연장, 아니 column으로도 가능.
+
+# 그리드 단위를 쫀득하게 지정.
+
+함수: repeat(4,1fr);
+단위: 1fr , max-content, min-content,
+repeat(auto-fill, minmax(70px,1fr) ); 가능한 많이 채워라, 최소 70px로 만약 애매하게 남는 부분 또는 70px이상의 자리는 1fr로 동등히 나눠서 늘려
+repeat(auto-fit, minmax(70px,1fr) ); 가능한 많이 채워라, 최소 70px로 하되, 애매하게 남는부분(70px이하)는 1fr로 늘리고, 70px이상의 자리는 고스트 그리드로 채워라.
+
+# 그리드 자체를 정렬하거나 그리드 안의 개별 요소들을 정렬합니다( 수직 수평 둘다 가능)
+
+justify-content: center 그리드 자체를 row - 수평 중앙정렬
+align-content: center 그디르 자체를 column - 수직 중앙정렬
+
+-> place-content 축약 가능
+
+justify-items: center 그리드 요소 안에서 수평 중앙정렬
+쌤썜
+-> place-itmes 축약 가능
+
+# 그리드 요소의 크기를 지정합니다.( 크기는 1gird-> 2gird 또는 3번에서 5번까지 rule ) flex의 grow 와 유사.
+
+1. 제목 부분은 아예 뺀 위 행을 차지하도록 할 수 있음.
+   grid-column: 1 / -1;
+
+---
+
 ## 1. flex
 
 - flex -> 기본 row 정렬 -> justify-content (좌우 정렬 ) -> align-items (위 아래 정렬)
@@ -13,9 +55,9 @@
 - flex처럼 하위 요소들 div에게 적용이 된다.
 
 - 그리드 모든 행에대해 어떻게 쪼갤지 행을 나누눈방법을 열 템플릿에 기술
-- 그리드의 크기를 반응형으로 만들수있음.
-- 그리드 자체를 정렬할수있다.
-- 그리드 안의 컨테이너들을 정렬할수있음.
+- 그리드의 크기를 반응형으로 만들수있음. minmax 이용
+- 그리드 자체를 정렬할수있다. justify-content, align-item
+- 그리드 안의 컨테이너들을 정렬할수있음. grid-row-start
 - 그리드의 시작점과 끝점을 지정할수있다. | 그리드의 라인을 이름지어서 시작점과 끝점을 설정할수도 있다.
 
 # 3. (이론) PostCSS / CSSNext / CSS4
