@@ -1,5 +1,10 @@
 # CSS Master Class
 
+- section1 flexbox skip
+- section2 grid - html 튜토리얼 -> Task하나씩 보면 이해됨
+- section3 CSS전처리기 설치
+- section4 연습
+
 ### 피드백 justify-content | items | self : grid 자체를 움직임 | 그리드 요소가 움직임 | 그리드 요소 안에 가 움직임.
 
 - flex:row에서 justify는 수평 방향, align 은 수직 방향
@@ -9,7 +14,7 @@
 
 ---
 
-# 요약 정리
+# 1. 그리드 요약 정리
 
 # 그리드 선언을 합니다.
 
@@ -34,7 +39,7 @@ repeat(auto-fit, minmax(70px,1fr) ); 가능한 많이 채워라, 최소 70px로 
 # 그리드 자체를 정렬하거나 그리드 안의 개별 요소들을 정렬합니다( 수직 수평 둘다 가능)
 
 justify-content: center 그리드 자체를 row - 수평 중앙정렬
-align-content: center 그디르 자체를 column - 수직 중앙정렬
+align-content: center 그리드 자체를 column - 수직 중앙정렬
 
 -> place-content 축약 가능
 
