@@ -1,5 +1,12 @@
 # CSS Master Class
 
+### 피드백 justify-content | items | self : grid 자체를 움직임 | 그리드 요소가 움직임 | 그리드 요소 안에 가 움직임.
+
+- flex:row에서 justify는 수평 방향, align 은 수직 방향
+- flex에서는 justify만 content,items,self가 작동한다..
+
+[https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties)
+
 ---
 
 # 요약 정리

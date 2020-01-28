@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>p002</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+        height: 50vh;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+        background-color: cornflowerblue;
+      }
+      .box:nth-child(1) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .box:nth-child(5) {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

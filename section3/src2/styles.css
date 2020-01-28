@@ -1,0 +1,149 @@
+:root {
+  --colorOne: #f69cc4;
+  --colorTwo: #e2f0cb;
+  --colorThree: #fdfd95;
+  --colorFour: #afc3d2;
+  --colorFive: #7799cc;
+  --colorSix: #ff9aa2;
+  --colorSeven: #b5ead7;
+}
+
+body {
+  padding: 0px 30px;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.header h1 {
+  font-size: 70px;
+}
+.hearder__column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .nav__row {
+  text-transform: uppercase;
+}
+.header .nav__row .title {
+  opacity: 0.6;
+  margin: 10px 0px;
+  display: block;
+  text-decoration: underline;
+}
+.header .nav__row li {
+  list-style: none;
+}
+
+.content {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 30vh;
+}
+.content .item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+}
+.card__down {
+  justify-content: flex-end;
+}
+.card__up {
+  justify-content: space-around;
+}
+.card .card__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 12px 0px;
+}
+.card .card__content {
+  opacity: 0.5;
+}
+.card .card__link {
+  text-decoration: underline;
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 600;
+}
+.card .card__link:nth-child(4) {
+  margin-top: 50px;
+  align-self: flex-start;
+}
+.content .item:nth-child(1) {
+  background-color: var(--colorOne);
+  grid-row: span 2;
+}
+.content .item:nth-child(2) {
+  background-image: url("http://image.mujikorea.net/display/corner/202/19-0917_furniture_pc.jpg");
+  grid-area: span 2 / span 2;
+}
+.content .item:nth-child(3) {
+  background-color: var(--colorTwo);
+}
+.content .item:nth-child(4) {
+  background-image: url("https://www.jangin.com/data/main/file2_1565333623j6tw6yt60e.jpg");
+  background-size: cover;
+  grid-area: span 2 / span 1;
+}
+.content .item:nth-child(5) {
+  background-color: var(--colorThree);
+}
+.content .item:nth-child(6) {
+  background-color: var(--colorFour);
+}
+.content .item:nth-child(7) {
+  background-image: url("https://img.maisonkorea.com/2017/09/msk_59c8bbe802afd-768x1024.jpg");
+}
+.content .item:nth-child(8) {
+  background-color: var(--colorFive);
+  grid-area: span 2 / span 2;
+}
+.content .item:nth-child(9) {
+  background-image: url("https://newsimg.sedaily.com/2019/10/20/1VPLGZQVYE_5.jpg");
+  background-size: cover;
+  grid-area: span 2 / span 1;
+}
+.content .item:nth-child(10) {
+  background-image: url("https://img.maisonkorea.com/2019/05/msk_5cd2910b5e5eb.jpg");
+
+  grid-area: span 2 / span 2;
+}
+.content .item:nth-child(11) {
+  background-image: url("https://i.pinimg.com/originals/e6/49/61/e6496132d251bfb31241b10b43bc2338.jpg");
+  grid-area: span 1 / span 1;
+}
+.content .item:nth-child(12) {
+  background-image: url("https://img.maisonkorea.com/2019/05/msk_5cd2910b5e5eb.jpg");
+  background-size: cover;
+  grid-area: span 1 / span 1;
+}
+.content .item:nth-child(13) {
+  background-color: var(--colorSix);
+  grid-area: span 2 / span 2;
+}
+
+.content .item:nth-child(14) {
+  background-image: url("https://www.woodplanet.co.kr/news/data/20180424/p1065544998768794_871_thum.jpg");
+  background-size: cover;
+  grid-area: span 1 / span 1;
+}
+.content .item:nth-child(15) {
+  background-color: var(--colorSeven);
+  grid-area: span 1 / span 1;
+}
